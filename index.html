@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Climera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="#accueil" class="logo">
+            <img src="assets/logo.png" height="30px" alt="logo-climera">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#accueil" class="active">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#telecharger" class="nav-cta">
+            Télécharger
+        </a>
+        <button class="burger" id="burger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#accueil" onclick="closeMenu()">Accueil</a>
+        <a href="#apropos" onclick="closeMenu()">À propos</a>
+        <a href="#services" onclick="closeMenu()">Services</a>
+        <a href="#mission" onclick="closeMenu()">Mission</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+        <a href="#telecharger" class="nav-cta" onclick="closeMenu()">
+            <i data-lucide="smartphone"></i> Télécharger l'App
+        </a>
+    </div>
+
+    <!-- HERO-->
+    <section id="accueil" class="hero" style="padding:120px 64px 80px">
+        <div class="hero-grid-bg"></div>
+
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-award"></i>
+                Application Agricole #1 au Bénin
+            </div>
+
+            <h1>
+                Cultivez <em>durablement</em>,<br>
+                protégez votre avenir
+            </h1>
+
+            <p>
+                <strong>Climera</strong> accompagne les agriculteurs béninois vers une agriculture
+                moderne, durable et respectueuse de l'environnement.
+            </p>
+
+            <div class="hero-btns">
+                <a href="#telecharger" class="btn-primary">
+                    Télécharger l'App
+                </a>
+                <a href="#services" class="btn-secondary">
+                    <i class="fas fa-circle-play"></i>
+                    Voir la démo
+                </a>
+            </div>
+
+            <div class="stats-bar">
+                <div class="stat">
+                    <div class="stat-num">12 K+</div>
+                    <div class="stat-label">Agriculteurs</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">5</div>
+                    <div class="stat-label">Régions</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">4.8 ★</div>
+                    <div class="stat-label">Note App</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">+30 %</div>
+                    <div class="stat-label">Rendement</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div style="position:relative">
+                <div class="hero-card">
+                    <img src="assets/mobile.png" alt="image d'une interface de l'application">
+                </div>
+
+                <!-- Chip météo -->
+                <div class="chip chip-left">
+                    <div class="chip-icon" style="background:rgba(245,124,0,.10)">
+                        <i class="fas fa-cloud-sun" style="color:#F57C00; font-size:24px;"></i>
+                    </div>
+                    <div>
+                        <div class="chip-label">28°C · Ensoleillé</div>
+                        <div class="chip-sub">Parakou, Bénin</div>
+                    </div>
+                </div>
+
+                <!-- Chip rendement -->
+                <div class="chip chip-right">
+                    <div class="chip-icon" style="background:rgba(34,197,94,.10)">
+                        <i class="fa fa-arrow-up" style="color:#16a34a"></i>
+                    </div>
+                    <div>
+                        <div class="chip-label">Rendement</div>
+                        <div class="chip-sub green">+30 % cette saison</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="apropos" class="apropos">
+        <div class="container">
+            <div class="apropos-grid">
+                <div>
+                    <div class="section-tag">
+                        <i class="fa fa-circle-info"></i>
+                        À propos
+                    </div>
+                    <h2 class="section-title">Une application pensée pour les agriculteurs du Bénin</h2>
+                    <p class="section-sub">Climera est une solution digitale innovante qui met la technologie au service
+                        de l'agriculture traditionnelle. Nous connectons les savoirs locaux aux données modernes pour
+                        une agriculture plus productive et durable.</p>
+                    <div class="features-mini">
+                        <div class="feat-item">
+                            <div class="feat-item-icon"><i class="fas fa-cloud-rain"></i></div>
+                            <div class="feat-item-label">Météo précise</div>
+                        </div>
+                        <div class="feat-item">
+                            <div class="feat-item-icon"><i class="fas fa-sprout"></i></div>
+                            <div class="feat-item-label">Conseils experts</div>
+                        </div>
+                        <div class="feat-item">
+                            <div class="feat-item-icon"><i class="fas fa-map"></i></div>
+                            <div class="feat-item-label">Suivi des sols</div>
+                        </div>
+                        <div class="feat-item">
+                            <div class="feat-item-icon"><i class="fas fa-leaf"></i></div>
+                            <div class="feat-item-label">Éco-protection</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="apropos-img">
+                    <img src="assets/plantation.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES  -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-tag">
+                <i class="fas fa-layer-group"></i>
+                Nos services
+            </div>
+            <h2 class="section-title">Tout ce dont vous avez besoin</h2>
+            <p class="section-sub">Des outils puissants et simples d'utilisation pour améliorer votre rendement tout en
+                protégeant la nature.</p>
+            <div class="cards-grid">
+                <div class="card c1">
+                    <div class="card-icon"><i class="fas fa-cloud-sun-rain"></i></div>
+                    <h3>Prévisions Météo</h3>
+                    <p>Recevez des alertes météo localisées et des prévisions à 7 jours pour mieux planifier vos
+                        activités agricoles.</p>
+                </div>
+                <div class="card c2">
+                    <div class="card-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Conseils Agricoles</h3>
+                    <p>Des recommandations personnalisées d'experts agronomes adaptées à vos cultures, sols et région.
+                    </p>
+                </div>
+                <div class="card c3">
+                    <div class="card-icon"><i class="fas fa-vial"></i></div>
+                    <h3>Suivi des Sols</h3>
+                    <p>Analysez la qualité de vos sols, suivez leur évolution et recevez des conseils de fertilisation
+                        optimisés.</p>
+                </div>
+                <div class="card c4">
+                    <div class="card-icon"><i class="fas fa-recycle"></i></i></div>
+                    <h3>Protection Environnementale</h3>
+                    <p>Adoptez des pratiques durables pour préserver la biodiversité et réduire l'impact
+                        environnemental.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISSION & VISION-->
+    <div id="mission" class="mv-section">
+        <div class="mission">
+            <div class="mv-icon"><i class="fas fa-bullseye"></i></div>
+            <div class="mv-tag">Notre Mission</div>
+            <div class="mv-quote">Accompagner les agriculteurs vers une production durable et respectueuse de
+                l'environnement</div>
+        </div>
+        <div class="vision">
+            <div class="mv-icon"><i class="fas fa-binoculars"></i></div>
+            <div class="mv-tag">Notre Vision</div>
+            <div class="mv-quote">Un Bénin où agriculture rime avec durabilité et protection de la nature</div>
+        </div>
+    </div>
+
+    <!-- TÉMOIGNAGES  -->
+    <section class="temoignages">
+        <div class="container">
+            <div class="section-tag">
+                <i class="fas fa-comment-dots"></i>
+                Témoignages
+            </div>
+            <h2 class="section-title">Ce que disent nos agriculteurs</h2>
+            <p class="section-sub">Des milliers de familles améliorent leur récolte grâce à Climera.</p>
+            <div class="temo-grid">
+                <div class="temo-card">
+                    <div class="temo-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="temo-text">Grâce aux prévisions météo, j'ai pu sauver ma récolte de tomates. Climera a
+                        changé ma façon de travailler.</p>
+                    <div class="temo-author">
+                        <div class="author-name">Adjaï Fatoumata</div>
+                        <div class="author-role">Agricultrice, Parakou</div>
+                    </div>
+                </div>
+                <div class="temo-card">
+                    <div class="temo-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="temo-text">Les conseils agricoles sont très pratiques. Mon rendement a augmenté de 30 % en
+                        une seule saison !</p>
+                    <div class="temo-author">
+                        <div class="author-name">Kokou Mensah</div>
+                        <div class="author-role">Agriculteur, Abomey</div>
+                    </div>
+                </div>
+                <div class="temo-card">
+                    <div class="temo-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="temo-text">Le suivi des sols m'a permis de mieux fertiliser mes champs. Excellent outil
+                        pour les agriculteurs modernes.</p>
+                    <div class="temo-author">
+                        <div class="author-name">Sèmèvo Ahoklé</div>
+                        <div class="author-role">Agriculteur, Bohicon</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+                <div class="partenaires-bar">
+                <span class="partenaires-label">Partenaires</span>
+                <div class="partner-logo"><i data-lucide="globe"></i> FAO Bénin</div>
+                <div class="partner-logo"><i data-lucide="sprout"></i> MAEP</div>
+                <div class="partner-logo"><i data-lucide="droplets"></i> UNICEF</div>
+                <div class="partner-logo"><i data-lucide="landmark"></i> Min. Agriculture</div>
+                <div class="partner-logo"><i data-lucide="leaf"></i> GIZ Bénin</div>
+            </div> 
+            -->
+        </div>
+    </section>
+
+    <!--CTA -->
+    <div id="telecharger" class="cta-section">
+        <div class="container">
+            <h2>Prêt à transformer votre agriculture ?</h2>
+            <p>Rejoignez plus de 12 000 agriculteurs qui utilisent Climera au quotidien.</p>
+            <div class="cta-btns">
+                <button class="btn-white">
+                    <i class="fas fa-mobile-alt"></i>
+                    Télécharger l'App
+                </button>
+                <button class="btn-outline-white">
+                    <i class="fab fa-apple"></i>
+                    App Store
+                </button>
+                <button class="btn-outline-white">
+                    <i class="fas fa-play"></i>
+                    Google Play
+                </button>
+            </div>
+            <div class="newsletter">
+                <span class="newsletter-label"><i data-lucide="mail"></i> Newsletter :</span>
+                <input type="email" placeholder="Votre adresse email..." />
+                <button>S'inscrire</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-tag">
+                <i class="fas fa-phone"></i>
+                Contact
+            </div>
+            <h2 class="section-title">Parlons ensemble</h2>
+            <p class="section-sub">Une question ? Un partenariat ? Nous sommes là pour vous.</p>
+            <div class="contact-grid">
+                <div>
+                    <div class="contact-info-title">Nous trouver</div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-pin"></i></div>
+                        <div>
+                            <div class="contact-item-label">Adresse</div>
+                            <div class="contact-item-text">Cotonou, Bénin — Haie Vive, Rue des Agriculteurs</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <div class="contact-item-label">Téléphone</div>
+                            <div class="contact-item-text">+229 97 00 00 00</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <div class="contact-item-label">Email</div>
+                            <div class="contact-item-text">contact@climera.app</div>
+                        </div>
+                    </div>
+                    <div class="socials">
+                        <div class="social-btn"><i class="fab fa-facebook-f"></i></div>
+                        <div class="social-btn"><i class="fab fa-twitter"></i></div>
+                        <div class="social-btn"><i class="fab fa-instagram"></i></div>
+                        <div class="social-btn"><i class="fab fa-youtube"></i></div>
+                        <div class="social-btn"><i class="fab fa-linkedin-in"></i></div>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nom</label>
+                            <input type="text" placeholder="Votre nom..." />
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="votre@email.com" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Sujet</label>
+                        <input type="text" placeholder="Objet de votre message..." />
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea placeholder="Écrivez votre message ici..."></textarea>
+                    </div>
+                    <button class="submit-btn">
+                        <i data-lucide="send"></i>
+                        Envoyer le message
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#accueil" class="logo">Cli<span class="m">m</span>era</a>
+                    <p>L'application de référence pour une agriculture durable et connectée au Bénin. Cultivez
+                        intelligemment, protégez la nature.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#apropos">À propos</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#mission">Mission</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Météo agricole</a></li>
+                        <li><a href="#">Conseils experts</a></li>
+                        <li><a href="#">Suivi des sols</a></li>
+                        <li><a href="#">Éco-protection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Confidentialité</a></li>
+                        <li><a href="#">CGU</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2036 Climera. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
