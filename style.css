@@ -656,8 +656,8 @@ section {
 }
 
 .card-icon i {
-    width: 24px;
-    height: 24px;
+    font-size: 24px;
+    line-height: 1;
 }
 
 .c1 .card-icon {
@@ -1466,4 +1466,4 @@ footer {
     .newsletter input {
         width: 100%;
     }
-}
+}                                                                               
